@@ -9,3 +9,5 @@ What’s inside:
 2. Jupyter notebooks for each detection method
 3. Visualizations for model performance, reconstruction errors, and comparison charts
 3. A flowchart outlining the end-to-end detection pipeline
+
+Goal: Automate the process of flagging potentially illegal or suspicious software, support compliance, and provide insights for IT audits.

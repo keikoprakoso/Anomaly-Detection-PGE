@@ -1,12 +1,12 @@
-# 🚀 Software License Anomaly Detection Project
+# Software License Anomaly Detection Project
 
 A comprehensive machine learning project for detecting suspicious software installations using multiple unsupervised anomaly detection algorithms.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Software Anomaly Project/
-├── 📊 data/
+├── data/
 │   └── Software_License_Cleaned.csv          # Input dataset
 ├── 🔧 src/
 │   ├── models/                              # Anomaly detection models
@@ -18,7 +18,7 @@ Software Anomaly Project/
 │   └── utils/                               # Utility scripts
 │       ├── image_analyzer.py                # Image analysis tool
 │       └── create_html_viewer.py            # HTML viewer generator
-├── 📈 output/
+├── output/
 │   ├── results/                             # Analysis results
 │   │   ├── Software_Anomalies_IF.csv
 │   │   ├── Software_Anomalies_SVM.csv
@@ -33,45 +33,15 @@ Software Anomaly Project/
 │   │   └── comprehensive_analysis.png
 │   └── reports/                             # Generated reports
 │       └── visualizations.html
-├── 📚 docs/                                 # Documentation
+├── docs/                                 # Documentation
 │   ├── README.md                           # This file
 │   └── VISUALIZATION_GUIDE.md              # Visualization tools guide
-├── 🚀 run_analysis.py                      # Main execution script
+├── run_analysis.py                      # Main execution script
 ├── requirements.txt                         # Python dependencies
 └── .gitignore                              # Git ignore file
 ```
 
-## 🎯 Quick Start
-
-### 1. Install Dependencies
-```bash
-pip3 install -r requirements.txt
-```
-
-### 2. Run Complete Analysis
-```bash
-python3 run_analysis.py
-```
-
-This will execute the entire pipeline:
-- ✅ Isolation Forest Analysis
-- ✅ One-Class SVM Analysis
-- ✅ Local Outlier Factor Analysis
-- ✅ Autoencoder Analysis
-- ✅ Master Summary Analysis
-- ✅ Visualization Generation
-
-### 3. Run Individual Models
-```bash
-# From project root
-python3 src/models/software_if.py
-python3 src/models/software_ocsvm.py
-python3 src/models/software_lof.py
-python3 src/models/software_autoencoder.py
-python3 src/models/software_summary.py
-```
-
-## 📊 Dataset Description
+## Dataset Description
 
 The project analyzes `Software_License_Cleaned.csv` containing software license audit data:
 
@@ -85,7 +55,7 @@ The project analyzes `Software_License_Cleaned.csv` containing software license 
 - `License_Version`: Version of the license
 - `Install_Date`: Installation date
 
-## 🔍 Anomaly Detection Models
+## Anomaly Detection Models
 
 ### 1. **Isolation Forest**
 - **Algorithm**: Tree-based ensemble method
@@ -108,7 +78,7 @@ The project analyzes `Software_License_Cleaned.csv` containing software license 
 - **Parameters**: `epochs=50`, threshold at 95th percentile
 - **Output**: `Software_Anomalies_Autoencoder.csv`
 
-## 📈 Output Files
+## Output Files
 
 ### Results (CSV Files)
 - **Individual Model Results**: Each model generates a CSV with anomaly flags
@@ -124,32 +94,32 @@ The project analyzes `Software_License_Cleaned.csv` containing software license 
 ### Reports (HTML Files)
 - **Interactive Viewer**: `visualizations.html` - Browse all visualizations
 
-## 🛠️ Key Features
+## Key Features
 
 ### Data Preprocessing
-- ✅ Duplicate removal
-- ✅ Missing value handling
-- ✅ Label encoding for categorical variables
-- ✅ Feature scaling (MinMaxScaler for Autoencoder, StandardScaler for SVM/LOF)
+- Duplicate removal
+- Missing value handling
+- Label encoding for categorical variables
+- Feature scaling (MinMaxScaler for Autoencoder, StandardScaler for SVM/LOF)
 
 ### Model Training
-- ✅ Consistent preprocessing across all models
-- ✅ Reproducible results with random seeds
-- ✅ Model-specific parameter optimization
+- Consistent preprocessing across all models
+- Reproducible results with random seeds
+- Model-specific parameter optimization
 
 ### Visualization
-- ✅ Comprehensive plotting with matplotlib/seaborn
-- ✅ High-resolution PNG outputs
-- ✅ Interactive HTML viewer
-- ✅ Model comparison dashboards
+- Comprehensive plotting with matplotlib/seaborn
+- High-resolution PNG outputs
+- Interactive HTML viewer
+- Model comparison dashboards
 
 ### Analysis
-- ✅ Individual model results
-- ✅ Cross-model comparison
-- ✅ High-risk software identification
-- ✅ Publisher and product analysis
+- Individual model results
+- Cross-model comparison
+- High-risk software identification
+- Publisher and product analysis
 
-## 📋 Use Cases
+## Use Cases
 
 ### Software License Auditing
 - Detect unauthorized software installations
@@ -166,7 +136,7 @@ The project analyzes `Software_License_Cleaned.csv` containing software license 
 - Identify over-licensed software
 - Monitor software usage patterns
 
-## 🔧 Technical Requirements
+## Technical Requirements
 
 ### Python Version
 - Python 3.7 or higher
@@ -179,13 +149,7 @@ The project analyzes `Software_License_Cleaned.csv` containing software license 
 - `matplotlib>=3.4.0` - Plotting
 - `seaborn>=0.11.0` - Statistical visualizations
 
-## 📚 Documentation
-
-- **Main Guide**: This README file
-- **Visualization Guide**: `docs/VISUALIZATION_GUIDE.md`
-- **Code Comments**: Extensive inline documentation in all scripts
-
-## 🎯 Analysis Results
+## Analysis Results
 
 ### High-Risk Software Identified
 - **VMware Workstation**: 9 records flagged by all models
@@ -202,22 +166,3 @@ The project analyzes `Software_License_Cleaned.csv` containing software license 
 - **One-Class SVM**: 203 anomalies (4.68%)
 - **Local Outlier Factor**: 193 anomalies (4.45%)
 - **Autoencoder**: 183 anomalies (4.22%)
-
-## 🚀 Getting Started
-
-1. **Clone/Download** the project
-2. **Install dependencies**: `pip3 install -r requirements.txt`
-3. **Run analysis**: `python3 run_analysis.py`
-4. **View results**: Check `output/` directory
-5. **Explore visualizations**: Open `output/reports/visualizations.html`
-
-## 📞 Support
-
-For questions or issues:
-1. Check the documentation in `docs/`
-2. Review the code comments
-3. Examine the output files for insights
-
----
-
-**Happy Anomaly Detection! 🚀** 
